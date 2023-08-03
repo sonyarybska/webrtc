@@ -37,7 +37,7 @@ const Room = () => {
     if (!user) {
       window.location.href = "/";
     }
-    socket.current = io("http://localhost:5000");
+    socket.current = io("https://study-hive-backend-100.onrender.com");
     socketFunctions.newMessage(socket, setMsgs, user);
 
     peer.on("open", (userID) => {
